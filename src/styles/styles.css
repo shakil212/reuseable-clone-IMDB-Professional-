@@ -1,0 +1,65 @@
+/* styles.css */
+
+/* Pagination styles */
+.pagination {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination .page-link {
+  background-color: #007bff;
+  /* Background color for pagination links */
+  color: #fff;
+  /* Text color for pagination links */
+  border: 1px solid #007bff;
+  padding: 8px 12px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  /* Rounded corners */
+  display: inline-block;
+}
+
+.pagination .page-link:hover {
+  background-color: #0056b3;
+  /* Darker background color on hover */
+  border-color: #0056b3;
+  color: #fff;
+  /* Maintain white text color on hover */
+}
+
+.pagination .page-link:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.pagination .page-item.disabled .page-link {
+  pointer-events: none;
+  background-color: #6c757d;
+  /* Disabled state background color */
+  border-color: #6c757d;
+  color: #fff;
+  /* Maintain white text color for disabled links */
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #0056b3;
+  /* Active state background color */
+  border-color: #0056b3;
+  color: #fff;
+  /* Maintain white text color for active links */
+}
+
+/* Image styles */
+.poster-image {
+  width: 200px;
+  /* Set desired width */
+  height: auto;
+  /* Maintain aspect ratio */
+}
